@@ -1,0 +1,70 @@
+.sidebar {
+  width: 17%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  padding: 44px 0 24px 0;
+  border-radius: 30px;
+  background: hsla(240, 100%, 97%, 1);
+}
+
+.nav {
+  align-self: flex-start;
+  margin-top: 40px;
+  padding: 0 20px 0 0;
+  & li {
+    padding: 6px 26px 6px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: hsla(230, 27%, 36%, 1);
+    &:hover {
+      background-color: hsla(252, 39%, 64%, 1);
+      color: hsla(0, 0%, 100%, 1);
+      & img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  & img {
+    transition: all 0.3s ease;
+    margin: 0 8px 0 46px;
+  }
+}
+
+.active {
+  background-color: hsla(252, 39%, 64%, 1);
+  & span {
+    color: hsla(0, 0%, 100%, 1);
+  }
+
+  & img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.referral {
+  position: relative;
+  margin: 50px 20px 0;
+  padding: 16px 34px 10px 16px;
+  background: hsla(240, 100%, 100%, 1);
+  border-radius: 15px;
+  color: hsla(229, 25%, 26%, 1);
+  overflow: hidden;
+  &__title {
+    font-size: 16px;
+  }
+  &__text {
+    font-size: 10px;
+    margin: 4px 0 10px;
+  }
+  & img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

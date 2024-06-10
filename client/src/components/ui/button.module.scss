@@ -1,0 +1,41 @@
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: CirceRounded, sans-serif;
+}
+.purple {
+  background: hsla(259, 100%, 91%, 1);
+  &:hover {
+    background: hsla(259, 100%, 91%, 0.7);
+  }
+}
+.dark_purple {
+  background: hsla(252, 39%, 64%, 1);
+  &:hover {
+    background: hsla(252, 39%, 64%, 0.7);
+  }
+}
+.blue {
+  background: hsla(209, 100%, 92%, 1);
+  &:hover {
+    background: hsla(209, 100%, 92%, 0.7);
+  }
+}
+.sizeS {
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.sizeM {
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.sizeL {
+  padding: 10px 86px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}

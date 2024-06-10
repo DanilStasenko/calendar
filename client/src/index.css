@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "CirceRounded";
+  src: url("./assets/fonts/CirceRounded-Regular.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: CirceRounded, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ant-popover-inner {
+  border: 1px solid hsla(251, 40%, 56%, 1);
+  border-radius: 12px;
+  padding: 30px !important;
+}
+:where(.css-dev-only-do-not-override-3rel02).ant-popover
+  .ant-popover-arrow::after {
+  background: hsla(251, 40%, 56%, 1);
+}

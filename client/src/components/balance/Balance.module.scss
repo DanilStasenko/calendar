@@ -1,0 +1,43 @@
+.balance {
+  grid-column: 1/5;
+  padding: 28px;
+  border: 1px solid hsla(251, 40%, 56%, 1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & h2 {
+    color: hsla(229, 25%, 26%, 1);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid hsla(240, 100%, 97%, 1);
+
+    & span {
+      color: hsla(229, 25%, 26%, 1);
+      font-size: 16px;
+    }
+  }
+
+  &__count {
+    width: 40px;
+    height: 40px;
+    background: hsla(240, 100%, 97%, 1);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

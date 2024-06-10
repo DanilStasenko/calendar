@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px 12px 32px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  & p {
+    font-size: 24px;
+    color: hsla(229, 25%, 26%, 1);
+    & span {
+      color: hsla(251, 40%, 56%, 1);
+    }
+  }
+  & div {
+    display: flex;
+  }
+}
+
+.avatar {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

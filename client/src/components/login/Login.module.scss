@@ -1,0 +1,71 @@
+.container {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  & div {
+    width: 100%;
+  }
+}
+
+.email {
+  margin-bottom: 12px;
+}
+
+.password {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  align-self: flex-start;
+}
+
+.button {
+  color: white;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 6px;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  margin-top: 64px;
+  font-size: 16px;
+}
+
+.register {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: hsla(208, 100%, 50%, 1);
+  cursor: pointer;
+}
+
+.error {
+  margin: 8px 0;
+  align-self: flex-start;
+  color: red;
+  text-align: left;
+}

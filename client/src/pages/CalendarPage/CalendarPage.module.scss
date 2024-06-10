@@ -1,0 +1,124 @@
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  &__topHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+
+    &__select {
+      width: 253px;
+    }
+
+    &__btn {
+      padding-right: 94px;
+      padding-left: 94px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 12px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & p {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__arrowBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_left:hover {
+      transform: translateX(-3px);
+    }
+    &_right:hover {
+      transform: translateX(3px);
+    }
+  }
+
+  &__interactive {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 20px;
+      border-radius: 15px;
+      border: 1px solid hsla(252, 39%, 64%, 1);
+
+      & span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  &__dayHeader {
+    margin: 2px 2px 2px auto;
+
+    & span {
+      color: hsla(270, 5%, 48%, 1);
+      font-size: 15px;
+    }
+  }
+
+  &__day {
+    flex: 1;
+    border: 1px solid hsla(0, 0%, 93%, 1);
+    padding: 4px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__date {
+    padding-right: 2px;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: flex-end;
+
+    & span {
+      color: hsla(229, 25%, 26%, 1);
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+  &__lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.calendar-days-headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}

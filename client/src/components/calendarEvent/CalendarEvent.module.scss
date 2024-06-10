@@ -1,0 +1,37 @@
+.lesson {
+  border: 1px solid #ddd;
+  color: hsla(229, 25%, 26%, 1);
+  position: relative;
+  padding: 4px;
+  border-radius: 2px;
+  border: 1px solid;
+
+  &__future {
+    background-color: hsla(118, 46%, 89%, 1);
+    border-color: hsla(117, 49%, 82%, 1);
+  }
+
+  &__past {
+    background-color: transparent;
+    border-width: 0.5px;
+    border-color: hsla(270, 5%, 48%, 0.3);
+  }
+
+  &__canceled {
+    text-decoration: line-through;
+  }
+
+  &__wallet {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+
+  &__time {
+    font-size: 12px;
+  }
+
+  &__name {
+    font-size: 10px;
+  }
+}

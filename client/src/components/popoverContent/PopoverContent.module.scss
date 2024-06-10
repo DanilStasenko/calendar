@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 12px;
+  min-width: 190px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 600;
+  color: hsla(229, 25%, 26%, 1);
+}
+
+.you {
+  font-size: 10px;
+  color: hsla(229, 25%, 26%, 1);
+}
+
+.active {
+  background: hsla(240, 100%, 97%, 1);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: hsla(240, 100%, 97%, 1);
+  margin: 12px 0;
+}
+
+.exit {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  & p {
+    font-size: 16px;
+    color: hsla(208, 100%, 50%, 1);
+  }
+}
